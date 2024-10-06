@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution URL](https://www.frontendmentor.io/solutions/four-card-feature-section-oQetO3tqvV)
--   [Live Site URL](https://waragismynickname.github.io/four-card-feature-section/)
+-   [Solution URL](https://www.frontendmentor.io/solutions/testimonials-grid-section-6GsElb10Ui)
+-   [Live Site URL](https://waragismynickname.github.io/testimonials-grid-section/)
 
 ## My process
 
