@@ -1,0 +1,159 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    color: var(--very-dark-blackish-blue);
+
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h2, h3 {
+    font-weight: 600;
+}
+
+h2 {
+    margin: 1rem auto;
+}
+
+p {
+    color: var(--light-gray);
+    font-weight: 500;
+    opacity: 70%;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+main {
+    display: flex;
+    
+    align-items: center;
+}
+
+.white-bg-text-color {
+    color: var(--very-dark-blackish-blue);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 5rem 2rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+    background-color: white;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tail {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.header {
+    display: flex;
+    gap: 1rem;
+
+    height: 3em;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avatar {
+    border-radius: 50%;
+
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.br-violet {
+    border: 2px solid hsla(263, 55%, 52%, 0.5);
+}
+
+.br-grayish-blue {
+    border: 2px solid hsla(217, 19%, 35%, 0.5);
+}
+
+.br-blackish-blue {
+    border: 2px solid hsla(219, 29%, 14%, 0.5);
+}
+
+.bg-violet {
+    background-color: var(--moderate-violet);
+    color: var(--white)
+}
+
+.bg-grayish-blue {
+    background-color: var(--very-dark-grayish-blue);
+    color: var(--white)
+}
+
+.bg-blackish-blue {
+    background-color: var(--very-dark-blackish-blue);
+    color: var(--white)
+}
+
+.bg-quotations {
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-position: 80% 0%;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+    .content {
+        display: grid;
+
+        margin: 10rem auto;
+    
+        grid-template-columns: repeat(4, 16rem);
+        grid-template-rows: auto auto;
+    
+        gap: 2em;
+    }
+}
